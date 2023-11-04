@@ -1,0 +1,241 @@
+body {
+  overflow-x: hidden;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+header img{
+ 
+ margin-right: 2000px;
+}
+header {
+  justify-items: end;
+    background-color: #2aa57c;
+    color: #ffffff;
+    text-align:justify;
+    padding: 20px;
+    font-size:xx-large;
+}
+header h1 {
+    margin: 0;
+   
+}
+header h3 {
+    margin: 0;
+   color: #2b0b0b;
+}
+
+section {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 5px;
+}
+#about p{
+  color: #000000;
+  font-size: x-large;
+}
+#about img {
+    max-width: 100%;
+}
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.project img {
+    max-width: 100%;
+}
+footer p {
+color: #f5f5f5;
+}
+footer {
+    background-color: #388a63;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    
+}
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .skill-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    animation: pause 3s 1, slide 32s linear infinite;
+  }
+  
+  .skill-list li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .skill-card {
+    text-align: center;
+    padding: 20px;
+    background-color: #e0e0e0;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .skill-card img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  
+  @keyframes slide {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    12.5% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-100%);
+    }
+    37.5% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(-200%);
+    }
+    62.5% {
+      transform: translateX(-200%);
+    }
+    75% {
+      transform: translateX(-300%);
+    }
+    87.5% {
+      transform: translateX(-300%);
+    }
+  }
+  
+  @keyframes pause {
+    0%, 100% {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Create a new animation set to repeat the animation */
+  @keyframes repeat-slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-300%);
+    }
+  }
+  
+  /* Apply the repeating animation after the first one */
+  .skill-list {
+    animation-delay: 2s;
+    animation-name: repeat-slide;
+    animation-iteration-count: infinite;
+    animation-duration: 50s; /* Half the duration of the original animation */
+    animation-timing-function: linear;
+  }
+  /* Add this to your style.css file */
+
+#skills {
+    padding: 80px 0; /* Adjust the padding as needed */
+    text-align: center;
+    color: #fff; /* Text color on top of the background image */
+  }
+  
+  .section-content {
+    background: rgba(0, 0, 0, 0.6); /* Add a semi-transparent black overlay on the background image */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  h2 {
+    font-size: 36px; /* Adjust the heading font size */
+  }
+  
+  .skill-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .skill-card {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for skill cards */
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .skill-card img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  
+  /* Additional styling for the skill cards, you can customize as needed */
+  .skill-card h3 {
+    font-size: 18px;
+    color: #000000; /* Text color for skill titles */
+  }
+  #experiences {
+    padding: 80px 0; /* Adjust the padding as needed */
+    text-align: center;
+    background-color: #f5f5f5; /* Background color for the experiences section */
+    color: #333; /* Text color */
+}
+
+h2 {
+    font-size: 36px; /* Adjust the heading font size */
+}
+
+.experience-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff; /* Background color for the experience cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.experience-image img {
+    max-width: 200px; /* Adjust the image size as needed */
+    border-radius: 50%; /* Rounded image */
+    margin-right: 20px;
+}
+
+.experience-details {
+    text-align: left;
+}
+
+h3 {
+    font-size: 24px; /* Adjust the job title font size */
+    margin: 0;
+}
+
+p {
+    margin: 10px 0;
+    color: #777; /* Subtext color */
+}
+  
+  

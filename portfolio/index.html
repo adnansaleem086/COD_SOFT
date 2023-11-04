@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pp.js">
+    <title>ADNAN SALEEM - Portfolio</title>
+</head>
+<body>
+    <header>
+       <center> <img src="logo.png" alt="Adnan Saleem" height="200" width="240"></center>
+        <h1>Adnan Saleem</h1>
+        <h3>Web Developer</h3>
+    </header>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="pp.js">
+        <title>ADNAN SALEEM - Portfolio</title>
+    </head>
+    <body>
+    
+        <section id="about">
+            <p id="typing-text"></p>
+        </section>
+        <script>
+            const phrases = [
+            "Hello, my name is Adnan Saleem,",
+                "I'm excited to share my skills and experience with you.",
+                "I am currently pursuing a degree in BSIT from the National University of Modern Languages (NUML),",
+                "where I've been honing my skills in web development and design"
+            ];
+            
+            const typingSpeed = 30; 
+            const erasingSpeed = 30; 
+            
+            let phraseIndex = 0;
+            let charIndex = 0;
+            let isErasing = false;
+            
+            const textElement = document.getElementById("typing-text");
+            
+            function typeText() {
+                const phrase = phrases[phraseIndex];
+                
+                if (isErasing) {
+                    textElement.innerHTML = phrase.substring(0, charIndex - 1);
+                    charIndex--;
+                } else {
+                    textElement.innerHTML = phrase.substring(0, charIndex + 1);
+                    charIndex++;
+                }
+                
+                if (charIndex > phrase.length) {
+                    isErasing = true;
+                    setTimeout(typeText, erasingSpeed);
+                } else if (charIndex < 0) {
+                    isErasing = false;
+                    phraseIndex = (phraseIndex + 1) % phrases.length;
+                    setTimeout(typeText, typingSpeed);
+                } else {
+                    const speed = isErasing ? erasingSpeed : typingSpeed;
+                    setTimeout(typeText, speed);
+                }
+            }
+            
+            typeText(); 
+        </script>
+        
+    </section>
+   <CENter> <h2>SKILLS</h2></CENter>
+    <section id="skills">
+        
+        <div class="carousel">
+            <ul class="skill-list">
+                <li>
+                    <div class="skill-card">
+                        <img src="html.jpg" alt="HTML">
+                        <h3>HTML</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="skill-card">
+                        <img src="creative-css3-tutorials.jpg" alt="CSS">
+                        <h3>CSS</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="skill-card">
+                        <img src="js.jpg" alt="JavaScript">
+                        <h3>JavaScript</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="skill-card">
+                        <img src="web.jpg" alt="Web Design">
+                        <h3>Web Design</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="skill-card">
+                        <img src="Wordpress.jpg" alt="Wordpress">
+                        <h3>Wordpress</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="skill-card">
+                        <img src="pc.jpg" alt="Photo Editing">
+                        <h3>Photo Editing</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="skill-card">
+                        <img src="photo-1574717025058-2f8737d2e2b7.jpg" alt="Video Editing">
+                        <h3>Video Editing</h3>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <section id="experiences">
+            <h2>Experiences</h2>
+            <div class="experience-card">
+                <div class="experience-image">
+                    <img src="call.png" alt="Experience 1">
+                </div>
+                <div class="experience-details">
+                    <h3>Call Center Agent</h3>
+                    <p>Website Acess</p>
+                    <p>Duration: 6 Months</p>
+                    <p>As a Call Center Agent specializing in mobile website development, I engaged with clients through both outbound and inbound calls to understand their website requirements, recommend tailored solutions for mobile optimization, and ensure a seamless customer experience. My role involved effective communication, problem resolution, collaboration with internal teams, and an in-depth understanding of mobile web design trends and best practices. I played a vital role in helping clients enhance their online presence by delivering mobile-friendly websites that met their specific needs and preferences.</p>
+                </div>
+            </div>
+            <div class="experience-card">
+                <div class="experience-image">
+                    <img src="eh.png" alt="Experience 2">
+                </div>
+                <div class="experience-details">
+                    <h3>Amazon</h3>
+                    <p>EcomHutsy</p>
+                    <p>Duration:4 Months</p>
+                    <p>
+                        As a Virtual Assistant (VA) for Amazon or Walmart at EcomHutsy, my role involved providing remote administrative support and assistance to enhance the operational efficiency of these e-commerce giants. Tasks included managing schedules, data entry, customer inquiries, order processing, and various administrative duties, contributing to the smooth operation of their vast online retail platforms.</p>
+                </div>
+            </div>
+           
+            <div class="experience-card">
+                <div class="experience-image">
+                    <img src="3rd.jpg" alt="Experience 2">
+                </div>
+                <div class="experience-details">
+                    <h3>Web Developer</h3>
+                    <p>3rdEyeSoft</p>
+                    <p>Duration:3 Months</p>
+                    <p>
+                        As a Web Developer at 3rd Eye Soft, my role focused on customizing websites using the WordPress platform. I was responsible for tailoring websites to meet the unique needs and preferences of clients. This involved creating and modifying themes, integrating plugins, and optimizing the user experience, ultimately delivering visually appealing and functional websites that met the specific requirements of each project.</p>
+                </div>
+            </div>
+           
+        </section>
+        
+        
+    </section>
+   <center> <h2>Projects</h2></center>
+    <section id="projects">
+    
+       
+        <div class="project">
+            <img src="ss.png" alt="Project 1" height="400" width="800">
+            <h3>Login Page for gym</h3>
+            <p>Create a Login Page for gym just for practice</p>
+        </div>
+        <div class="project">
+            <img src="ss2.png" alt="Project 2" height="400" width="800">
+            <img src="ss3.png" alt="Project 2"  height="400" width="800">
+           <br> <h3>Exercise Website</h3><br>
+            <p>Created a Exercise website for people to loose their weight and stay fit and healthy </p>
+        </div>
+        
+    </section>
+    <section id="resume">
+        
+        <h2>Resume</h2>
+        <a href="cv.pdf" target="_blank" rel="noopener noreferrer">Download Resume (PDF)</a>
+    </section>
+    <section id="contact">
+       
+        <h2>Contact</h2>
+        <p>Email: saleemadnan607@gmail.com</p>
+        <p>Phone: +92 310-6965014</p>
+    </section>
+    <footer>
+          <p>&copy; 2023 Adnan Saleem</p>
+       
+    </footer>
+</body>
+</html>
